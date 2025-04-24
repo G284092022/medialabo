@@ -19,15 +19,21 @@ div#shita{
 
 div#ue > div {
 	margin-left: 5px;
-	background-color: #68f06882;
+	background-color: #8f8e8e4a;
     padding: 5px 5px 5px 5px;
     margin: 0px 5px 5px 5px;
-    border: 5px thick double #ce9732;
+    border: thick double #2ba522f4;
 }
 
 div#shita > div {
 	margin-left: 5px;
-	background-color: #68f06882;
+	background-color: #8f8e8e4a;
     padding: 5px 5px 5px 5px;
-    margin: 5px 5px 5px 5px;
+    margin: 0px 5px 5px 5px;
+    border: thick double #2ba522f4;
+}
+
+a:hover{
+    text-decoration: none;
+    color: aqua;   
 }

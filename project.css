@@ -1,0 +1,5 @@
+body{
+    background-image: url(kissaten.jpg);
+    background-size: cover;
+    filter: blur(3px);
+}
