@@ -1,0 +1,33 @@
+body{
+    background:linear-gradient(to right bottom,rgba(158, 147, 217, 0.654) , rgb(197, 255, 255)) ;
+
+}
+
+div#ue{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: stretch;
+	grid-gap: 10px;
+}
+
+div#shita{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 300px;
+	grid-gap: 10px;
+}
+
+div#ue > div {
+	margin-left: 5px;
+	background-color: #68f06882;
+    padding: 5px 5px 5px 5px;
+    margin: 0px 5px 5px 5px;
+    border: 5px thick double #ce9732;
+}
+
+div#shita > div {
+	margin-left: 5px;
+	background-color: #68f06882;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+}
