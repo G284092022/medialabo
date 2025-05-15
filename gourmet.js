@@ -14,6 +14,16 @@ function print(data) {
   }
 }
 
+// 課題4-1
+function conpri(){
+  let exm = document.querySelector("select[name=genre]")
+  console.log(exm.value)
+}
+
+let b = document.querySelector('button#kensaku')
+b.addEventListener('click',conpri)
+
+
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
 

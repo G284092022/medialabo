@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>かんたんな入力フォーム</title>
+    <script src="input-demo.js" defer></script>
+  </head>
+
+  <body>
+    <h1>かんたんな入力フォーム</h1>
+	<p>氏名を記入するテキストボックスが表示されます．</p>
+	<p>表示ボタンは最初動作しませんが，あとでプログラムを読み込ませると動作するようになります．</p>
+	<label for="shimei">氏名: </label>
+	<input type="text" name="shimei" size="10" id="shimei">
+	<button id="print">表示</button>
+  <label for="color1">カラー:</label>
+  <input type="color" name="color" size="10" id="color1">
+  <label>パスワード：</label>
+  <input type="password">
+  <label for="search1">検索:</label>
+  <input type="search" name="search" size="10" id="search1">
+
+  <!--idとfor-->
+  <input type="radio" name="radio" id="radio1">
+  <label for="radio1">選択肢1</label> <!--idを指定すると、選択肢1　を押しても選択ができる-->
+  <input type="radio" name="radio" id="radio2">
+  <label for="radio">選択肢2</label>
+
+	<p id="message">メッセージ</p>
+  </body>
+</html>

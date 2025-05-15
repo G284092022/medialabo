@@ -3,6 +3,22 @@ body{
 
 }
 
+div#kazu{
+   display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: stretch;
+	grid-gap: 10px; 
+}
+
+div#kazu > div {
+	margin-left: 5px;
+	background-color: #b8a6ba4a;
+    padding: 5px 5px 5px 5px;
+    margin: 0px 5px 5px 5px;
+    border: thick double #efe163f4;
+}
+
+
 div#ue{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -13,7 +29,7 @@ div#ue{
 div#shita{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 300px;
+    align-items: stretch;
 	grid-gap: 10px;
 }
 
