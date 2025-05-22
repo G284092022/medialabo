@@ -26,6 +26,55 @@ b.addEventListener('click',conpri)
 
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
+  let re = document.querySelector("div#result")
+  if(re!=null)re.remove()
+  let d = document.createElement('div') 
+  d.setAttribute("id","result") 
+  let body = document.querySelector('body') 
+  body.insertAdjacentElement('beforeend',d) 
+  
+  let u = document.createElement('ul') 
+  let l = document.createElement('li')
+  d.insertAdjacentElement('beforeend',u) 
+  for(let r of data.results.shop){
+    l=document.createElement('li')
+    u.insertAdjacentElement('beforeend',l) 
+    l.textContent=r.name
+    l.style.fontWeight='bold'
+    l.style.fontSize="28px"
+
+    l=document.createElement('li')
+    u.insertAdjacentElement('beforeend',l) 
+    l.textContent="アクセス:"+r.access
+
+    l=document.createElement('li')
+    u.insertAdjacentElement('beforeend',l) 
+    l.textContent="住所:"+r.address
+
+    l=document.createElement('li')
+    u.insertAdjacentElement('beforeend',l) 
+    l.textContent="予算:"+r.budget.name
+
+    l=document.createElement('li')
+    u.insertAdjacentElement('beforeend',l) 
+    l.textContent="キャッチコピー:"+r.catch
+    
+    l=document.createElement('li')
+    u.insertAdjacentElement('beforeend',l) 
+    l.textContent="ジャンル:"+r.genre.name
+
+    l=document.createElement('li')
+    u.insertAdjacentElement('beforeend',l) 
+    l.textContent="営業時間:"+r.open
+
+    l=document.createElement('li')
+    u.insertAdjacentElement('beforeend',l) 
+    l.textContent="最寄駅:"+r.mobile_access
+
+    l=document.createElement('li')
+    u.insertAdjacentElement('beforeend',l) 
+    l.textContent="サブジャンル:"+r.sub_genre.name
+  }
 
 }
 
