@@ -35,13 +35,15 @@ function printDom(data) {
   
   let u = document.createElement('ul') 
   let l = document.createElement('li')
+  let p = document.createElement('p') 
   d.insertAdjacentElement('beforeend',u) 
   for(let r of data.results.shop){
-    l=document.createElement('li')
-    u.insertAdjacentElement('beforeend',l) 
-    l.textContent=r.name
-    l.style.fontWeight='bold'
-    l.style.fontSize="28px"
+    p=document.createElement('p')
+    p.setAttribute("id","shopname")
+    u.insertAdjacentElement('beforeend',p) 
+    p.textContent=r.name
+    p.style.fontWeight='bold'
+    p.style.fontSize="28px"
 
     l=document.createElement('li')
     u.insertAdjacentElement('beforeend',l) 
