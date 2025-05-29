@@ -3,6 +3,21 @@ body{
 
 }
 
+h1{
+    font-size: 50px;
+    font-family: "Gill Sans",sans-serif;
+    font-weight: 900;
+    border-bottom: 4mm ridge #6518f6;
+    text-align: center;
+    font-style: italic;
+}
+
+p#project{
+    border: dashed #0a49a7f4;
+    padding: 1%;
+    background-color: #ded5ee85;
+}
+
 div#kazu{
    display: grid;
     grid-template-columns: 1fr 1fr;
@@ -15,7 +30,7 @@ div#kazu > div {
 	background-color: #b8a6ba4a;
     padding: 5px 5px 5px 5px;
     margin: 0px 5px 5px 5px;
-    border: thick double #efe163f4;
+    border: 2mm ridge #efe163f4;
 }
 
 
@@ -49,7 +64,22 @@ div#shita > div {
     border: thick double #2ba522f4;
 }
 
+div#matome{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+	grid-gap: 10px;
+}
+
+div#matome > div {
+	margin-left: 5px;
+	background-color: #968e9d4a;
+    padding: 5px 5px 5px 5px;
+    margin: 0px 5px 5px 5px;
+    border: 2mm ridge #4e0e6fc1;
+}
+
 a:hover{
     text-decoration: none;
-    color: aqua;   
+    color: rgba(227, 64, 189, 0.751);   
 }
